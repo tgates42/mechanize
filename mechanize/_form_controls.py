@@ -1,6 +1,6 @@
-#!/usr/bin/env python2
+#!/usr/bin/env python
 # vim:fileencoding=utf-8
-from __future__ import absolute_import
+
 
 import random
 import re
@@ -12,7 +12,7 @@ from . import _request
 from .polyglot import urlparse, urlunparse, urlencode, is_py2, iteritems
 
 if is_py2:
-    from cStringIO import StringIO
+    from io import StringIO
 else:
     from io import StringIO  # 2to3: probably broken when writing bytes
 
